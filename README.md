@@ -4,11 +4,13 @@ Located in /etc/ppp/
 
 ...
 
+```
 ├── **gprs-connect-chat**
 ├── peers
 │   ├── **gprsdial**
 │   └── **gprsdial2**
 └── resolv.conf
+```
 
 Call:
 
