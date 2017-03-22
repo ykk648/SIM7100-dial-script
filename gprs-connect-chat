@@ -1,0 +1,26 @@
+#/etc/ppp/gprs-connect-chat
+# chat script for China Mobile, used SIMCOM sim4100 TD module.
+TIMEOUT    15
+ABORT    "DELAYED"
+ABORT    "BUSY"
+ABORT    "ERROR"
+ABORT    "NO DIALTONE"
+ABORT    "NO CARRIER"
+TIMEOUT    40
+''    \rAT
+OK    ATS0=0
+OK    ATE0V1
+#OK    AT+CGDCONT=1,"IP","CMNET"
+OK    AT+CGDCONT=1,"IP","3GNET"
+OK    AT+CGEQREQ=1,2,128,384,,,0,,,,,,
+#OK    ATDT*99*1#
+OK    ATDT*99#
+CONNECT
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+#/etc/ppp/peers/gprsdial
+# This is pppd script for China Mobile, used SIMCOM SIM7100 Module
+# Usage: root>pppd call gprs
+#Interface should be used is the interface which connects physics interface of SIM7100 Module.
+/dev/ttyUSB3
+115200
+crtscts
+modem
+#noauth
+debug
+nodetach
+#hide-password
+usepeerdns
+noipdefault
+#defaultroute
+#user "cmnet"
+user "3gnet"
+0.0.0.0:0.0.0.0
+#ipcp-accept-local
+#ipcp-accept-remote
+#lcp-echo-failure 12
+#lcp-echo-interval 3
+#noccp
+#novj
+#novjccomp
+#persist
+connect '/usr/sbin/chat -s -v -f /etc/ppp/gprs-connect-chat'
+#disconnect '/bin/chat -v -f /etc/ppp/gprs-disconnect-chat'
