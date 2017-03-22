@@ -2,7 +2,6 @@
 
 Located in /etc/ppp/
 
-...
 
 ```
 ├── **gprs-connect-chat**
