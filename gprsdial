@@ -6,7 +6,7 @@
 115200
 crtscts
 modem
-#noauth
+noauth
 debug
 nodetach
 #hide-password
